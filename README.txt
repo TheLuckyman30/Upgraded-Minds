@@ -1,0 +1,2 @@
+Upgraded Minds is a simple Stellaris mod that allows organinc empires to follow the machine age acesnion paths.
+Adds an acension perk called Upgraded Minds. This will convert your species to a machine species, and then it will start the transformation situation.
