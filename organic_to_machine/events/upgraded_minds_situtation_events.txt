@@ -1,0 +1,19 @@
+country_event = {
+	id = upgradedminds.1
+	is_triggered_only = yes
+	immediate = {
+		start_situation = {
+			type = situation_upgraded_minds
+			target = root
+		}
+	}
+}
+
+situation_event = {
+	id = upgradedminds.2
+	is_triggered_only = yes
+
+	after = {
+		create_machine_species_effect = yes
+	}
+}
