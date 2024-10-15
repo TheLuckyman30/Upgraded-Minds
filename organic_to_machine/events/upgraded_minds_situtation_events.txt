@@ -11,6 +11,7 @@ country_event = {
 
 situation_event = {
 	id = upgradedminds.2
+	situation = this
 	is_triggered_only = yes
 
 	after = {

@@ -17,7 +17,7 @@ situation_upgraded_minds = {
 			end = 500 
 			on_first_enter = {
 				situation_event = {
-					id = upgradedminds.2
+					id = upgradedminds.2 days = 1
 				}
 			}
 			custom_tooltip = stage_transformation_effects
