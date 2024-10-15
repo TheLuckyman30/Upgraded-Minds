@@ -1,0 +1,231 @@
+situation_upgraded_minds = {
+	category = neutral
+	picture = GFX_evt_machine_sapience
+	complete_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_ascension
+	on_progress_complete = {
+		custom_tooltip = situation_transformation_outcome
+		hidden_effect = {
+			situation_event = { id = machine_age.4005 }
+		}
+		set_situation_locked = yes
+	}
+	stages = {
+		stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+			end = 500 
+			on_first_enter = {
+				situation_event = {
+					id = unrest.163
+				}
+			}
+			custom_tooltip = stage_transformation_effects
+		}
+		stage_2 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+			end = 750
+			on_first_enter = {
+				situation_event = { id = machine_age.4100 days = 1 }
+			}
+			custom_tooltip = stage_transformation_effects
+		}
+		stage_3 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_blue
+			end = 1000
+			on_first_enter = {
+				situation_event = { id = machine_age.4210 days = 1 }
+			}
+			custom_tooltip = stage_transformation_effects
+		}
+		stage_4 = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_blue
+			end = 1250
+			on_first_enter = {
+				situation_event = { id = machine_age.4310 }
+			}
+			custom_tooltip = stage_transformation_effects
+		}
+		stage_5 = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_blue
+			end = 1500
+			on_first_enter = {
+				situation_event = { id = machine_age.4400 }
+			}
+			custom_tooltip = stage_transformation_effects
+		}
+	}
+	approach = {
+		name = situation_transformation_errorcorrecting
+		icon = GFX_situation_approach_balance_sheet
+		icon_background = GFX_situation_approach_bg_yellow
+		on_select = {
+			custom_tooltip = approach_transformation_errorcorrecting_tt
+		}
+		ai_weight = {
+			base = 0
+		}
+	}
+	approach = {
+		name = situation_transformation_realtime
+		icon = GFX_situation_approach_shrug
+		icon_background = GFX_situation_approach_bg_green
+		on_select = {
+			custom_tooltip = approach_transformation_realtime_tt
+		}
+		default = yes
+		ai_weight = {
+			base = 10
+		}
+		modifier = {
+			country_unity_produces_mult = -0.1
+		}
+	}
+	approach = {
+		name = situation_transformation_overclocked
+		icon = GFX_situation_approach_this_is_fine
+		icon_background = GFX_situation_approach_bg_yellow
+		on_select = {
+			custom_tooltip = approach_transformation_overclocked_tt
+		}
+		ai_weight = {
+			base = 0
+		}
+		modifier = {
+			country_unity_produces_mult = -0.2
+		}
+	}
+	on_monthly = {
+		events = {
+			machine_age.4110 # Stage 1 story event
+			machine_age.4130 # Stage 1 story event
+			machine_age.4140 # Stage 1 story event
+			machine_age.4150 # Stage 1 story event
+			machine_age.4210 # Stage 2 story event
+			machine_age.4230 # Stage 2 story event
+			machine_age.4240 # Stage 2 story event
+			machine_age.4250 # Stage 2 story event
+			machine_age.4310 # Stage 3 story event
+			machine_age.4330 # Stage 3 story event
+			machine_age.4340 # Stage 3 story event
+			machine_age.4350 # Stage 3 story event
+			machine_age.4490 # Stage 4 story event
+		}
+	}
+	monthly_progress = { #On average, the situation should take about 7 years to complete
+		base = 10
+		# Modifiers are defined in tooltip order, most important first
+		modifier = {
+			mult = 1.2
+			desc = "situation_transformation_overclocked"
+			current_situation_approach = situation_transformation_overclocked
+		}
+		modifier = {
+			mult = 0.8
+			desc = "situation_transformation_errorcorrecting"
+			current_situation_approach = situation_transformation_errorcorrecting
+		}
+		modifier = {
+			mult = 1.25
+			desc = "transformation_waste_discard_tt"
+			has_situation_flag = transformation_waste_discard
+		}
+		modifier = {
+			mult = 1.1
+			desc = opinion_virtuality_data_scraped
+			has_situation_flag = virtuality_data_scraped
+		}
+		modifier = {
+			mult = 0.75
+			desc = "transformation_waste_recycle_tt"
+			has_situation_flag = transformation_waste_recycle
+		}
+		modifier = {
+			mult = 0
+			desc = "situation_transformation_pause_desc"
+			has_situation_flag = situation_transformation_pause
+		}
+	}
+	triggered_modifier = {
+		potential = {
+			has_situation_flag = transformation_engineering_max
+		}
+		modifier = {
+			country_engineering_tech_research_speed = -0.2
+		}
+	}
+	triggered_modifier = {
+		potential = {
+			has_situation_flag = transformation_engineering_med
+		}
+		modifier = {
+			country_engineering_tech_research_speed = -0.1
+		}
+	}
+	triggered_modifier = {
+		potential = {
+			has_situation_flag = transformation_engineering_min
+		}
+		modifier = {
+			country_engineering_tech_research_speed = -0.05
+		}
+	}
+	triggered_modifier = {
+		potential = {
+			has_situation_flag = transformation_society_max
+		}
+		modifier = {
+			country_society_tech_research_speed = -0.2
+		}
+	}
+	triggered_modifier = {
+		potential = {
+			has_situation_flag = transformation_society_med
+		}
+		modifier = {
+			country_society_tech_research_speed = -0.1
+		}
+	}
+	triggered_modifier = {
+		potential = {
+			has_situation_flag = transformation_society_min
+		}
+		modifier = {
+			country_society_tech_research_speed = -0.05
+		}
+	}
+	triggered_modifier = {
+		potential = {
+			has_situation_flag = transformation_physics_max
+		}
+		modifier = {
+			country_physics_tech_research_speed = -0.2
+		}
+	}
+	triggered_modifier = {
+		potential = {
+			has_situation_flag = transformation_physics_med
+		}
+		modifier = {
+			country_physics_tech_research_speed = -0.1
+		}
+	}
+	triggered_modifier = {
+		potential = {
+			has_situation_flag = transformation_physics_min
+		}
+		modifier = {
+			country_physics_tech_research_speed = -0.05
+		}
+	}
+	abort_trigger = {
+		OR = {
+			NOT = { exists = target.owner }
+			target.owner = { NOT = { is_same_value = root.owner } }
+		}
+	}
+}

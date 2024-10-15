@@ -1,7 +1,6 @@
 ap_uprgaded_minds = {
     
     on_enabled = {
-        create_machine_species_effect = yes
         country_event = {
             id = machine_age.4000
         }
