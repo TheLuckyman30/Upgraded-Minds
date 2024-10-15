@@ -2,7 +2,7 @@ ap_uprgaded_minds = {
     
     on_enabled = {
         country_event = {
-            id = machine_age.4000
+            id = upgradedminds.1
         }
     }
 
