@@ -1,9 +1,10 @@
 ap_uprgaded_minds = {
-    
     on_enabled = {
-        country_event = {
-            id = upgradedminds.1
-        }
+		hidden_effect = {
+			country_event = {
+				id = upgradedminds.1
+			}
+		}
     }
 
     possible = {
