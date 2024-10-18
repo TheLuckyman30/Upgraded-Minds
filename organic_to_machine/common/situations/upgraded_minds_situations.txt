@@ -6,7 +6,7 @@ situation_upgraded_minds = {
 	on_progress_complete = {
 		custom_tooltip = situation_transformation_outcome
 		hidden_effect = {
-			situation_event = { id = machine_age.4005 }
+			situation_event = { id = upgraded_minds.402 }
 		}
 		set_situation_locked = yes
 	}
@@ -17,7 +17,7 @@ situation_upgraded_minds = {
 			end = 500 
 			on_first_enter = {
 				situation_event = {
-					id = upgradedminds.2 days = 1
+					id = upgraded_minds.2 days = 1
 				}
 			}
 			custom_tooltip = stage_transformation_effects
@@ -27,7 +27,7 @@ situation_upgraded_minds = {
 			icon_background = GFX_situation_stage_frame_blue
 			end = 750
 			on_first_enter = {
-				situation_event = { id = machine_age.4100 days = 1 }
+				situation_event = { id = upgraded_minds.100 days = 1 }
 			}
 			custom_tooltip = stage_transformation_effects
 		}
@@ -36,7 +36,7 @@ situation_upgraded_minds = {
 			icon_background = GFX_situation_stage_frame_blue
 			end = 1000
 			on_first_enter = {
-				situation_event = { id = machine_age.4210 days = 1 }
+				situation_event = { id = upgraded_minds.200 days = 1 }
 			}
 			custom_tooltip = stage_transformation_effects
 		}
@@ -45,7 +45,7 @@ situation_upgraded_minds = {
 			icon_background = GFX_situation_stage_frame_blue
 			end = 1250
 			on_first_enter = {
-				situation_event = { id = machine_age.4310 }
+				situation_event = { id = upgraded_minds.300 }
 			}
 			custom_tooltip = stage_transformation_effects
 		}
@@ -54,7 +54,7 @@ situation_upgraded_minds = {
 			icon_background = GFX_situation_stage_frame_blue
 			end = 1500
 			on_first_enter = {
-				situation_event = { id = machine_age.4400 }
+				situation_event = { id = upgraded_minds.400 }
 			}
 			custom_tooltip = stage_transformation_effects
 		}
@@ -101,19 +101,19 @@ situation_upgraded_minds = {
 	}
 	on_monthly = {
 		events = {
-			machine_age.4110 # Stage 1 story event
-			machine_age.4130 # Stage 1 story event
-			machine_age.4140 # Stage 1 story event
-			machine_age.4150 # Stage 1 story event
-			machine_age.4210 # Stage 2 story event
-			machine_age.4230 # Stage 2 story event
-			machine_age.4240 # Stage 2 story event
-			machine_age.4250 # Stage 2 story event
-			machine_age.4310 # Stage 3 story event
-			machine_age.4330 # Stage 3 story event
-			machine_age.4340 # Stage 3 story event
-			machine_age.4350 # Stage 3 story event
-			machine_age.4490 # Stage 4 story event
+			upgraded_minds.101 # Stage 1 story event
+			upgraded_minds.102 # Stage 1 story event
+			upgraded_minds.103 # Stage 1 story event
+			upgraded_minds.104 # Stage 1 story event
+			upgraded_minds.200 # Stage 2 story event
+			upgraded_minds.201 # Stage 2 story event
+			upgraded_minds.202 # Stage 2 story event
+			upgraded_minds.203 # Stage 2 story event
+			upgraded_minds.300 # Stage 3 story event
+			upgraded_minds.301 # Stage 3 story event
+			upgraded_minds.302 # Stage 3 story event
+			upgraded_minds.303 # Stage 3 story event
+			upgraded_minds.401 # Stage 4 story event
 		}
 	}
 	monthly_progress = { #On average, the situation should take about 7 years to complete
