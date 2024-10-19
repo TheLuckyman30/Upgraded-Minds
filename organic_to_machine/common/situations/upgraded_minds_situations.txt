@@ -222,6 +222,14 @@ situation_upgraded_minds = {
 			country_physics_tech_research_speed = -0.05
 		}
 	}
+	triggered_modifier = {
+		potential = {
+			has_situation_flag = situation_upgraded_minds_ongoing_upload
+		}
+		modifier = {
+			country_engineering_tech_research_speed = -0.15
+		}
+	}
 	abort_trigger = {
 		OR = {
 			NOT = { exists = target.owner }
