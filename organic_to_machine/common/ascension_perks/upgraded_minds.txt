@@ -7,6 +7,8 @@ ap_uprgaded_minds = {
 		}
     }
 
+	custom_tooltip = upgraded_minds_tooltip
+
     possible = {
 		custom_tooltip = {
 			fail_text = "synthetic_empire_synthetic_ascension"

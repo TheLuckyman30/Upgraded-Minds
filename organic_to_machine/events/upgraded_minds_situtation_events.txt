@@ -2,6 +2,7 @@ namespace = upgraded_minds
 
 country_event = {
 	id = upgraded_minds.1
+	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
 		start_situation = {
@@ -13,11 +14,27 @@ country_event = {
 
 situation_event = {
 	id = upgraded_minds.2
+	title = "upgraded_minds.2.name"
+	desc = "upgraded_minds.2.desc"
+	picture = GFX_evt_machine_sapience
+	show_sound = event_laboratory_sound
 	situation = this
 	is_triggered_only = yes
+
+	immediate = {
+		set_situation_flag = situation_upgraded_minds_pause
+	}
+
+	option = {
+		name = OK
+	}
+
+	after = {
+		remove_situation_flag = situation_upgraded_minds_pause
+	}
 }
 
-# upgraded_minds STAGE 1
+# UPGRADED MINDS STAGE 1
 # Fired by: situation stage on_first_enter
 situation_event = {
 	id = upgraded_minds.100
@@ -29,18 +46,9 @@ situation_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_situation_flag = situation_upgraded_minds_pause
 		situation_event = {
 			id = upgraded_minds.5
 		}
-	}
-
-	option = {
-		name = OK
-	}
-
-	after = {
-		remove_situation_flag = situation_upgraded_minds_pause
 	}
 }
 
@@ -225,7 +233,7 @@ situation_event = { # Nanite Conclusion: Limited
 	}
 }
 
-# upgraded_minds STAGE 2: Modularity
+# UPGRADED MINDS STAGE 2: Modularity
 # Fired by: situation stage on_first_enter
 situation_event = {
 	id = upgraded_minds.200
@@ -440,7 +448,7 @@ situation_event = { # Modularity: Limited
 	}
 }
 
-# upgraded_minds STAGE 3: Virtuality
+# UPGRADED MINDS STAGE 3: Virtuality
 # Fired by: situation stage on_first_enter
 situation_event = {
 	id = upgraded_minds.300
@@ -661,7 +669,7 @@ situation_event = { # Virtuality Conclusion: Limited
 	}
 }
 
-# upgraded_minds STAGE 4
+# UPGRADED MINDS STAGE 4
 # Fired by: situation stage on_first_enter
 situation_event = { # Tradition 1
 	id = upgraded_minds.400
