@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ap_upgraded_minds"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_upgraded_minds.dds"
+		alwaystransparent = yes
+	}
+}

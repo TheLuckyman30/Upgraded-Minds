@@ -1,11 +1,13 @@
-ap_uprgaded_minds = {
-    
+ap_upgraded_minds = {
     on_enabled = {
-        create_machine_species_effect = yes
-        country_event = {
-            id = machine_age.4000
-        }
+		hidden_effect = {
+			country_event = {
+				id = upgraded_minds.1
+			}
+		}
     }
+
+	custom_tooltip = upgraded_minds_tooltip
 
     possible = {
 		custom_tooltip = {
@@ -38,7 +40,7 @@ ap_uprgaded_minds = {
         has_machine_age_dlc = yes
         has_utopia = yes
         NOR = {
-            has_ascension_perk = ap_uprgaded_minds
+            has_ascension_perk = ap_upgraded_minds
             has_ascension_perk = ap_synthetic_evolution
             has_ascension_perk = ap_synthetic_age
 			has_authority = "auth_machine_intelligence"
