@@ -1,4 +1,4 @@
-ap_uprgaded_minds = {
+ap_upgraded_minds = {
     on_enabled = {
 		hidden_effect = {
 			country_event = {
@@ -40,7 +40,7 @@ ap_uprgaded_minds = {
         has_machine_age_dlc = yes
         has_utopia = yes
         NOR = {
-            has_ascension_perk = ap_uprgaded_minds
+            has_ascension_perk = ap_upgraded_minds
             has_ascension_perk = ap_synthetic_evolution
             has_ascension_perk = ap_synthetic_age
 			has_authority = "auth_machine_intelligence"
