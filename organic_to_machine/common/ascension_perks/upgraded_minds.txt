@@ -1,11 +1,13 @@
 ap_uprgaded_minds = {
-    
     on_enabled = {
-        create_machine_species_effect = yes
-        country_event = {
-            id = machine_age.4000
-        }
+		hidden_effect = {
+			country_event = {
+				id = upgraded_minds.1
+			}
+		}
     }
+
+	custom_tooltip = upgraded_minds_tooltip
 
     possible = {
 		custom_tooltip = {
