@@ -23,7 +23,7 @@ situation_upgraded_minds = {
 			custom_tooltip = stage_transformation_effects
 		}
 		stage_2 = {
-			icon = GFX_situation_stage_1
+			icon = GFX_situation_stage_2
 			icon_background = GFX_situation_stage_frame_blue
 			end = 750
 			on_first_enter = {
@@ -32,7 +32,7 @@ situation_upgraded_minds = {
 			custom_tooltip = stage_transformation_effects
 		}
 		stage_3 = {
-			icon = GFX_situation_stage_2
+			icon = GFX_situation_stage_3
 			icon_background = GFX_situation_stage_frame_blue
 			end = 1000
 			on_first_enter = {
@@ -41,7 +41,7 @@ situation_upgraded_minds = {
 			custom_tooltip = stage_transformation_effects
 		}
 		stage_4 = {
-			icon = GFX_situation_stage_3
+			icon = GFX_situation_stage_4
 			icon_background = GFX_situation_stage_frame_blue
 			end = 1250
 			on_first_enter = {
@@ -50,7 +50,7 @@ situation_upgraded_minds = {
 			custom_tooltip = stage_transformation_effects
 		}
 		stage_5 = {
-			icon = GFX_situation_stage_4
+			icon = GFX_situation_stage_5
 			icon_background = GFX_situation_stage_frame_blue
 			end = 1500
 			on_first_enter = {
