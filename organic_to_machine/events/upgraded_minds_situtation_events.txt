@@ -23,6 +23,7 @@ situation_event = {
 
 	immediate = {
 		set_situation_flag = situation_upgraded_minds_pause
+		set_situation_flag = situation_upgraded_minds_ongoing_upload
 	}
 
 	option = {
@@ -47,6 +48,7 @@ situation_event = {
 
 	immediate = {
 		set_situation_flag = situation_upgraded_minds_pause
+		remove_situation_flag = situation_upgraded_minds_ongoing_upload
 		create_machine_species_effect = yes
 	}
 
@@ -578,7 +580,7 @@ situation_event = { # Virtuality Conclusion: Full
 	immediate = {
 		set_situation_flag = situation_upgraded_minds_pause
 		set_situation_flag = upgraded_minds_4330_happened
-		remove_situation_flag = upgraded_minds_physics_min
+		remove_situation_flag = upgraded_minds_physics_max
 		remove_situation_flag = virtuality_data_scraped
 	}
 

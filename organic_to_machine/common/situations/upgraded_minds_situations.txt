@@ -60,7 +60,7 @@ situation_upgraded_minds = {
 		}
 	}
 	approach = {
-		name = situation_transformation_errorcorrecting
+		name = situation_upgraded_minds_errorcorrecting
 		icon = GFX_situation_approach_balance_sheet
 		icon_background = GFX_situation_approach_bg_yellow
 		on_select = {
@@ -71,7 +71,7 @@ situation_upgraded_minds = {
 		}
 	}
 	approach = {
-		name = situation_transformation_realtime
+		name = situation_upgraded_minds_realtime
 		icon = GFX_situation_approach_shrug
 		icon_background = GFX_situation_approach_bg_green
 		on_select = {
@@ -86,7 +86,7 @@ situation_upgraded_minds = {
 		}
 	}
 	approach = {
-		name = situation_transformation_overclocked
+		name = situation_upgraded_minds_overclocked
 		icon = GFX_situation_approach_this_is_fine
 		icon_background = GFX_situation_approach_bg_yellow
 		on_select = {
@@ -122,17 +122,17 @@ situation_upgraded_minds = {
 		modifier = {
 			mult = 1.2
 			desc = "situation_transformation_overclocked"
-			current_situation_approach = situation_transformation_overclocked
+			current_situation_approach = situation_upgraded_minds_overclocked
 		}
 		modifier = {
 			mult = 0.8
 			desc = "situation_transformation_errorcorrecting"
-			current_situation_approach = situation_transformation_errorcorrecting
+			current_situation_approach = situation_upgraded_minds_errorcorrecting
 		}
 		modifier = {
 			mult = 1.25
 			desc = "transformation_waste_discard_tt"
-			has_situation_flag = transformation_waste_discard
+			has_situation_flag = upgraded_minds_waste_discard
 		}
 		modifier = {
 			mult = 1.1
@@ -142,17 +142,17 @@ situation_upgraded_minds = {
 		modifier = {
 			mult = 0.75
 			desc = "transformation_waste_recycle_tt"
-			has_situation_flag = transformation_waste_recycle
+			has_situation_flag = upgraded_minds_waste_recycle
 		}
 		modifier = {
 			mult = 0
 			desc = "situation_transformation_pause_desc"
-			has_situation_flag = situation_transformation_pause
+			has_situation_flag = situation_upgraded_minds_pause
 		}
 	}
 	triggered_modifier = {
 		potential = {
-			has_situation_flag = transformation_engineering_max
+			has_situation_flag = upgraded_minds_engineering_max
 		}
 		modifier = {
 			country_engineering_tech_research_speed = -0.2
@@ -160,7 +160,7 @@ situation_upgraded_minds = {
 	}
 	triggered_modifier = {
 		potential = {
-			has_situation_flag = transformation_engineering_med
+			has_situation_flag = upgraded_minds_engineering_med
 		}
 		modifier = {
 			country_engineering_tech_research_speed = -0.1
@@ -168,7 +168,7 @@ situation_upgraded_minds = {
 	}
 	triggered_modifier = {
 		potential = {
-			has_situation_flag = transformation_engineering_min
+			has_situation_flag = upgraded_minds_engineering_min
 		}
 		modifier = {
 			country_engineering_tech_research_speed = -0.05
@@ -176,7 +176,7 @@ situation_upgraded_minds = {
 	}
 	triggered_modifier = {
 		potential = {
-			has_situation_flag = transformation_society_max
+			has_situation_flag = upgraded_minds_society_max
 		}
 		modifier = {
 			country_society_tech_research_speed = -0.2
@@ -184,7 +184,7 @@ situation_upgraded_minds = {
 	}
 	triggered_modifier = {
 		potential = {
-			has_situation_flag = transformation_society_med
+			has_situation_flag = upgraded_minds_society_med
 		}
 		modifier = {
 			country_society_tech_research_speed = -0.1
@@ -192,7 +192,7 @@ situation_upgraded_minds = {
 	}
 	triggered_modifier = {
 		potential = {
-			has_situation_flag = transformation_society_min
+			has_situation_flag = upgraded_minds_society_min
 		}
 		modifier = {
 			country_society_tech_research_speed = -0.05
@@ -200,7 +200,7 @@ situation_upgraded_minds = {
 	}
 	triggered_modifier = {
 		potential = {
-			has_situation_flag = transformation_physics_max
+			has_situation_flag = upgraded_minds_physics_max
 		}
 		modifier = {
 			country_physics_tech_research_speed = -0.2
@@ -208,7 +208,7 @@ situation_upgraded_minds = {
 	}
 	triggered_modifier = {
 		potential = {
-			has_situation_flag = transformation_physics_med
+			has_situation_flag = upgraded_minds_physics_med
 		}
 		modifier = {
 			country_physics_tech_research_speed = -0.1
@@ -216,10 +216,18 @@ situation_upgraded_minds = {
 	}
 	triggered_modifier = {
 		potential = {
-			has_situation_flag = transformation_physics_min
+			has_situation_flag = upgraded_minds_physics_min
 		}
 		modifier = {
 			country_physics_tech_research_speed = -0.05
+		}
+	}
+	triggered_modifier = {
+		potential = {
+			has_situation_flag = situation_upgraded_minds_ongoing_upload
+		}
+		modifier = {
+			country_engineering_tech_research_speed = -0.15
 		}
 	}
 	abort_trigger = {

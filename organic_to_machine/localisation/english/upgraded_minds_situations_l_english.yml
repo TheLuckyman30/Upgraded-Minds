@@ -8,3 +8,6 @@
   upgraded_minds_tooltip: "Every pop converts into a machine pop. Starts the §Y$situation_upgraded_minds$§! situation"
   upgraded_minds.2.name: "Machine Upload"
   upgraded_minds.2.desc: "Organic bodies can only take us so far. Once we embrace steel, we will go further than anyone else before us."
+  situation_upgraded_minds_errorcorrecting: "Error Correcting"
+  situation_upgraded_minds_realtime: "Real Time"
+  situation_upgraded_minds_overclocked: "Overclocked"
