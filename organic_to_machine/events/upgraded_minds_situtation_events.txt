@@ -49,36 +49,11 @@ situation_event = {
 	immediate = {
 		set_situation_flag = situation_upgraded_minds_pause
 		remove_situation_flag = situation_upgraded_minds_ongoing_upload
-		create_machine_species_effect = yes
-	}
-
-	option = {
-		name = OK
-	}
-
-	after = {
-		remove_situation_flag = situation_upgraded_minds_pause
-	}
-}
-
-situation_event = {
-	id = upgraded_minds.3
-	is_triggered_only = yes
-	situation = this
-
-	trigger = {
-		NOT = { has_situation_flag = upgraded_minds_3_happened }
-		situation_progress >= 525
-	}
-
-	immediate = {
-		set_situation_flag = upgraded_minds_3_happened
-		set_situation_flag = situation_upgraded_minds_pause
 	}
 
 	option = {
 		name = trait_robot_history_warbot
-		modify_machine_species_effect = {
+		create_machine_species_effect = {
 			TRAIT = trait_robot_history_warbot
 		}
 		ai_chance = {
@@ -87,7 +62,7 @@ situation_event = {
 	}
 	option = {
 		name = trait_robot_history_artbot
-		modify_machine_species_effect = {
+		create_machine_species_effect = {
 			TRAIT = trait_robot_history_artbot
 		}
 		ai_chance = {
@@ -96,7 +71,7 @@ situation_event = {
 	}
 	option = {
 		name = trait_robot_history_explorebot
-		modify_machine_species_effect = {
+		create_machine_species_effect = {
 			TRAIT = trait_robot_history_explorebot
 		}
 		ai_chance = {
@@ -105,7 +80,7 @@ situation_event = {
 	}
 	option = {
 		name = trait_robot_history_researchbot
-		modify_machine_species_effect = {
+		create_machine_species_effect = {
 			TRAIT = trait_robot_history_researchbot
 		}
 		ai_chance = {
@@ -114,7 +89,7 @@ situation_event = {
 	}
 	option = {
 		name = trait_robot_history_resourcebot
-		modify_machine_species_effect = {
+		create_machine_species_effect = {
 			TRAIT = trait_robot_history_resourcebot
 		}
 		ai_chance = {
@@ -123,7 +98,7 @@ situation_event = {
 	}
 	option = {
 		name = trait_robot_history_chatbot
-		modify_machine_species_effect = {
+		create_machine_species_effect = {
 			TRAIT = trait_robot_history_chatbot
 		}
 		ai_chance = {
@@ -131,10 +106,12 @@ situation_event = {
 		}
 	}
 
+
 	after = {
 		remove_situation_flag = situation_upgraded_minds_pause
 	}
 }
+
 
 # Fired by: situation on_monthly
 situation_event = { # Nanite Study

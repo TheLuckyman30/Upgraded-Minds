@@ -15,6 +15,7 @@ create_machine_species_effect = {
 				portrait = default_robot
 				traits = {
 					trait = trait_machine_unit
+                    trait = $TRAIT$
 				}
 				can_be_modified = this
 				homeworld = this
@@ -149,12 +150,4 @@ create_machine_species_effect = {
             }
         }
 	}
-}
-
-modify_machine_species_effect = {
-    owner = {
-        modify_species = {
-            add_trait = $TRAIT$
-        }
-    }
 }
