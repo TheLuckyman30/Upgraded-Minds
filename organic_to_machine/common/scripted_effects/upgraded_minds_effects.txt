@@ -1,6 +1,5 @@
 create_machine_species_effect = {
     if = {
-
 		limit = {
 			NOT = {
 				exists = event_target:machinespecies@root.owner
@@ -150,4 +149,12 @@ create_machine_species_effect = {
             }
         }
 	}
+}
+
+modify_machine_species_effect = {
+    owner = {
+        modify_species = {
+            add_trait = $TRAIT$
+        }
+    }
 }

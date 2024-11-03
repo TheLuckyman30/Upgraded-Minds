@@ -101,6 +101,7 @@ situation_upgraded_minds = {
 	}
 	on_monthly = {
 		events = {
+			upgraded_minds.3
 			upgraded_minds.101 # Stage 1 story event
 			upgraded_minds.102 # Stage 1 story event
 			upgraded_minds.103 # Stage 1 story event
