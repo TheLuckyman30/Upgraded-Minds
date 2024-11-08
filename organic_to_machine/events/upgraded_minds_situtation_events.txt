@@ -39,8 +39,8 @@ situation_event = {
 # Fired by: situation stage on_first_enter
 situation_event = {
 	id = upgraded_minds.100
-	title = "machine_age.4100.name"
-	desc = "machine_age.4100.desc"
+	title = "upgraded_minds.100.name" 
+	desc = "upgraded_minds.100.desc"
 	picture = GFX_evt_machine_sapience
 	show_sound = event_laboratory_sound
 	situation = this
@@ -49,17 +49,75 @@ situation_event = {
 	immediate = {
 		set_situation_flag = situation_upgraded_minds_pause
 		remove_situation_flag = situation_upgraded_minds_ongoing_upload
-		create_machine_species_effect = yes
 	}
 
 	option = {
-		name = OK
+		name = trait_robot_history_warbot
+		custom_tooltip = upgraded_minds.100.warbot
+		create_machine_species_effect = {
+			TRAIT = trait_robot_history_warbot
+		}
+		ai_chance = {
+			factor = 1
+		}
 	}
+	option = {
+		name = trait_robot_history_artbot
+		custom_tooltip = upgraded_minds.100.artbot
+		create_machine_species_effect = {
+			TRAIT = trait_robot_history_artbot
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = trait_robot_history_explorebot
+		custom_tooltip = upgraded_minds.100.explorebot
+		create_machine_species_effect = {
+			TRAIT = trait_robot_history_explorebot
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = trait_robot_history_researchbot
+		custom_tooltip = upgraded_minds.100.researchbot
+		create_machine_species_effect = {
+			TRAIT = trait_robot_history_researchbot
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = trait_robot_history_resourcebot
+		custom_tooltip = upgraded_minds.100.resourcebot
+		create_machine_species_effect = {
+			TRAIT = trait_robot_history_resourcebot
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = trait_robot_history_chatbot
+		custom_tooltip = upgraded_minds.100.chatbot
+		create_machine_species_effect = {
+			TRAIT = trait_robot_history_chatbot
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+
 
 	after = {
 		remove_situation_flag = situation_upgraded_minds_pause
 	}
 }
+
 
 # Fired by: situation on_monthly
 situation_event = { # Nanite Study
@@ -108,7 +166,7 @@ situation_event = { # Nanite Study
 	option = {
 		name = "machine_age.4110.d"
 		trigger = {
-			owner = { has_country_flag = upgraded_minds_nanites_studied }
+			owner = { has_country_flag = machine_age_nanites_studied }
 		}
 		custom_tooltip = "machine_age.4110.d.tt"
 		set_situation_flag = upgraded_minds_society_min
@@ -137,7 +195,7 @@ situation_event = { # Nanite Conclusion: Full
 		NOT = { has_situation_flag = upgraded_minds_4130_happened }
 		OR = {
 			has_situation_flag = upgraded_minds_engineering_max
-			owner = { has_country_flag = upgraded_minds_nanites_studied }
+			owner = { has_country_flag = machine_age_nanites_studied }
 		}
 		situation_progress >= 700
 	}
@@ -145,7 +203,7 @@ situation_event = { # Nanite Conclusion: Full
 		set_situation_flag = situation_upgraded_minds_pause
 		set_situation_flag = upgraded_minds_4130_happened
 		remove_situation_flag = upgraded_minds_engineering_max
-		owner = { remove_country_flag = upgraded_minds_nanites_studied }
+		owner = { remove_country_flag = machine_age_nanites_studied }
 	}
 
 	option = {
@@ -360,7 +418,7 @@ situation_event = { # Modularity: Full
 		set_situation_flag = situation_upgraded_minds_pause
 		set_situation_flag = upgraded_minds_4230_happened
 		remove_situation_flag = upgraded_minds_society_max
-		owner = { remove_country_flag = upgraded_minds_nanites_studied }
+		owner = { remove_country_flag = machine_age_nanites_studied }
 	}
 
 	option = {

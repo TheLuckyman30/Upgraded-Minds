@@ -1,6 +1,5 @@
 create_machine_species_effect = {
     if = {
-
 		limit = {
 			NOT = {
 				exists = event_target:machinespecies@root.owner
@@ -16,6 +15,7 @@ create_machine_species_effect = {
 				portrait = default_robot
 				traits = {
 					trait = trait_machine_unit
+                    trait = $TRAIT$
 				}
 				can_be_modified = this
 				homeworld = this
