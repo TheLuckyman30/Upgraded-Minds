@@ -39,8 +39,8 @@ situation_event = {
 # Fired by: situation stage on_first_enter
 situation_event = {
 	id = upgraded_minds.100
-	title = "machine_age.4100.name"
-	desc = "machine_age.4100.desc"
+	title = "upgraded_minds.100.name" 
+	desc = "upgraded_minds.100.desc"
 	picture = GFX_evt_machine_sapience
 	show_sound = event_laboratory_sound
 	situation = this
