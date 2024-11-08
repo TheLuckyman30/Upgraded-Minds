@@ -53,6 +53,7 @@ situation_event = {
 
 	option = {
 		name = trait_robot_history_warbot
+		custom_tooltip = upgraded_minds.100.warbot
 		create_machine_species_effect = {
 			TRAIT = trait_robot_history_warbot
 		}
@@ -62,6 +63,7 @@ situation_event = {
 	}
 	option = {
 		name = trait_robot_history_artbot
+		custom_tooltip = upgraded_minds.100.artbot
 		create_machine_species_effect = {
 			TRAIT = trait_robot_history_artbot
 		}
@@ -71,6 +73,7 @@ situation_event = {
 	}
 	option = {
 		name = trait_robot_history_explorebot
+		custom_tooltip = upgraded_minds.100.explorebot
 		create_machine_species_effect = {
 			TRAIT = trait_robot_history_explorebot
 		}
@@ -80,6 +83,7 @@ situation_event = {
 	}
 	option = {
 		name = trait_robot_history_researchbot
+		custom_tooltip = upgraded_minds.100.researchbot
 		create_machine_species_effect = {
 			TRAIT = trait_robot_history_researchbot
 		}
@@ -89,6 +93,7 @@ situation_event = {
 	}
 	option = {
 		name = trait_robot_history_resourcebot
+		custom_tooltip = upgraded_minds.100.resourcebot
 		create_machine_species_effect = {
 			TRAIT = trait_robot_history_resourcebot
 		}
@@ -98,6 +103,7 @@ situation_event = {
 	}
 	option = {
 		name = trait_robot_history_chatbot
+		custom_tooltip = upgraded_minds.100.chatbot
 		create_machine_species_effect = {
 			TRAIT = trait_robot_history_chatbot
 		}
