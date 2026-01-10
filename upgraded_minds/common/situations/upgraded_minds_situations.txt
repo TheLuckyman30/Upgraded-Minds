@@ -27,14 +27,14 @@ situation_upgraded_minds = {
 			icon_background = GFX_situation_stage_frame_blue
 			end = 750
 			on_first_enter = {
-				situation_event = { id = upgraded_minds.100 days = 1 }
+				situation_event = { id = upgraded_minds.3 days = 1 }
 			}
 			custom_tooltip = stage_transformation_effects
 		}
 		stage_3 = {
 			icon = GFX_situation_stage_3
 			icon_background = GFX_situation_stage_frame_blue
-			end = 1000
+			end = 30
 			on_first_enter = {
 				situation_event = { id = upgraded_minds.200 days = 1 }
 			}
