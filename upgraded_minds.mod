@@ -3,5 +3,5 @@ tags={
 	"Gameplay"
 }
 name="Upgraded Minds"
-supported_version="v3.14.*"
-path="C:/Users/Tardi/OneDrive/Documents/Paradox Interactive/Stellaris/mod/upgraded_minds"
+supported_version="v4.*"
+path="[path_to_mod]"
